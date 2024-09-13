@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #e9ecef; /* Light grey background for the whole page */
 }
 
 .container {
@@ -12,54 +12,77 @@ body {
   background: white;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners for the container */
 }
 
+/* Color Palette */
+:root {
+  --primary-color: #007BFF; /* Blue for accents */
+  --secondary-color: #6c757d; /* Grey for subtle accents */
+  --background-color: #f8f9fa; /* Light background for sections */
+  --text-color: #333; /* Dark text color */
+}
+
+/* Headings */
 h1, h2 {
-  color: #333;
+  color: var(--primary-color);
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+/* Section Styles */
+#personal-info {
+  text-align: center;
+  background-color: var(--background-color); /* Light background for personal info section */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
 }
 
-li {
-  margin-bottom: 10px;
+#education, #skills, #work-experience {
+  background-color: var(--background-color); /* Light background for sections */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between sections */
 }
 
 /* Profile Picture */
 .profile-pic {
   width: 150px;
   border-radius: 50%;
+  border: 4px solid var(--primary-color); /* Border around the profile picture */
 }
 
-/* Personal Info Section */
-#personal-info {
-  text-align: center;
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  color: var(--text-color);
 }
 
 /* Skills Section and Toggle Button */
-/* Skills Section */
 #skills ul {
   margin-bottom: 10px;
-  list-style-type: none;
   padding: 0;
 }
 
 #toggle-skills {
   display: inline-block;
-  padding: 10px;
-  background-color: #007BFF;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
   color: white;
   border: none;
+  border-radius: 5px; /* Rounded corners for button */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #toggle-skills:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
-
 
 /* Responsive Design */
 @media (max-width: 600px) {
