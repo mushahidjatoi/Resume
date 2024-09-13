@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Personal Info Section */
+#personal-info {
+  text-align: center;
+}
+
+/* Skills Section and Toggle Button */
+/* Skills Section */
+#skills ul {
+  margin-bottom: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+#toggle-skills {
+  display: inline-block;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-skills:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #skills {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #toggle-skills {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
